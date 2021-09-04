@@ -1,13 +1,151 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* --------------------------------- nav --------------------------------- */
+
+.nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.nav__h1 {
+  color: #f1356d;
+}
+.nav__links {
+  margin-left: auto;
+}
+
+.nav__link {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.nav__link:hover {
+  color: #f1356d;
+}
+
+/* ------------------------------- AppContent ------------------------------- */
+
+.app__content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ------------------------------ Post Preview ------------------------------ */
+
+.posts__post {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.posts__post:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.posts__link {
+  text-decoration: none;
+}
+
+.posts__title {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.posts__author {
+  display: inline-block;
+  font-weight: 800;
+  padding: 12px 0;
+  color: grey;
+}
+
+/* ------------------------------ Blog Preview ------------------------------ */
+
+.article__title {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.article__author {
+  text-align: right;
+  display: block;
+  font-weight: 800;
+  padding: 12px 0;
+  color: grey;
+}
+
+.article__body {
+  margin: 20px 0;
+}
+
+.article__btn,
+.create__btn {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ----------------------------- Add a new Blog ----------------------------- */
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create__heading {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create__label {
+  text-align: left;
+  display: block;
+  font-weight: 600;
+}
+
+.create__titleBox,
+.create__bodyBox,
+.create__author {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  resize: none;
+}
+
+.create__btn:focus {
+  outline: none;
+}
+
+.notFound {
+  text-align: left;
+}
+
+.notFound__p--margin{
+  margin: 12px 0;
+}
+
+.notFound__link:hover {
+  color: #f1356d;
 }
