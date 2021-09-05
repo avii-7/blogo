@@ -8,7 +8,7 @@ export default function useFetch(url) {
   useEffect(() => {
     const abortCont = new AbortController();
     const signal = abortCont.signal;
-    // Associate AbortController with fetch
+    // Associate/bind AbortController with fetch
     fetch(url, { signal })
       .then((res) => {
         if (!res.ok) {

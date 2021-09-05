@@ -22,9 +22,6 @@ export default function Create() {
       setLoading(false);
       history.push("/");
     });
-    setTitle("");
-    setBody("");
-    setAuthor("Yusi");
   };
 
   return (
@@ -60,12 +57,9 @@ export default function Create() {
           <option value="Yusi">Yusi</option>
           <option value="Billie">Billie</option>
         </select>
-        {!loading && <button className="create__btn">Add Blog</button>}
-        {loading && (
-          <button disabled className="create__btn">
-            Adding
-          </button>
-        )}
+        <button disabled={loading} className="create__btn">
+          {loading ? "Adding" : `Add Blog`}
+        </button>
       </form>
     </div>
   );
